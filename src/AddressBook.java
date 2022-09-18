@@ -16,10 +16,13 @@ public class AddressBook {
     }
 
     public void addBuddy(BuddyInfo buddy) {
-
+        buddies.add(buddy);
     }
 
     public void removeBuddy(BuddyInfo buddy) {
-
+        int index = buddies.indexOf(buddy);
+        if (index != -1){
+            buddies.remove(index);
+        }
     }
 }
