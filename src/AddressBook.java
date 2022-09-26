@@ -16,7 +16,10 @@ public class AddressBook {
     }
 
     public void addBuddy(BuddyInfo buddy) {
-        buddies.add(buddy);
+
+        if (buddy != null){
+            buddies.add(buddy);
+        }
     }
 
     public void removeBuddy(BuddyInfo buddy) {
