@@ -28,4 +28,10 @@ public class AddressBook {
             buddies.remove(index);
         }
     }
+    public String buddyMood(BuddyInfo buddy){
+        if(buddy != null){
+            return "happy";
+        }
+        else {return "sad";}
+    }
 }
